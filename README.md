@@ -15,7 +15,7 @@ Set-up:  \
 6- Build your code using the stuff below: (Remember that selenium can only read the loaded html on the page, therefore it has a small limit on how much old messages and chats it can find)\
 \
 import WppConversation as wpc => Main import  \
-myConv = wpc.WppConv("Whatsapp Name as it appears") => Creates a new whatsapp user, also opens a firefox tab with whatsapp web\
+myConv = wpc.WppConv("Whatsapp Name as it appears",profilePath) => Creates a new whatsapp user, also opens a firefox tab with whatsapp web\
 myConv.goToChat("Chat name as it appears") => Opens up a conversation\
 myConv.sendMessage("Message test") => Sends a message to the open chat. Long messages might take some additional time.\
 myConv.sendMedia(mediaPath, Comment = "") => Sends media (it detects the format)  with attached comments(Currently it is buggy with videos, but works perfectly with images) \
